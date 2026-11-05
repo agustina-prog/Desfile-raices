@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíces | Desfile de moda · Nueva Escuela</title>
+  <meta name="description" content="Raíces, desfile de moda de Nueva Escuela. Toda identidad comienza en algún lugar.">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+
+      <a href="#inicio" class="header__logo">
+        <img src="assets/images/logo/logo-blanco.png" alt="Nueva Escuela de Diseño y Comunicación">
+      </a>
+
+      <label for="menu-toggle" class="menu-btn" aria-label="Abrir o cerrar menú">
+        <span class="menu-btn__icon"></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#sobre">Sobre Raíces</a></li>
+          <li><a href="#desfile">El desfile</a></li>
+          <li><a href="#colecciones">Colecciones</a></li>
+          <li><a href="#evento">Evento</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+
+      <a href="#ubicacion" class="btn btn--small header__cta">Ver Ubicación</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Desfile de moda · Nueva Escuela</p>
+          <h1 class="hero__title">RAÍCES</h1>
+          <p class="hero__text">Toda identidad comienza en algún lugar</p>
+          <a href="#ubicacion" class="btn">Ver Ubicación</a>
+        </div>
+
+        <video class="hero__video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="cuenta" aria-labelledby="cuenta-titulo">
+      <div class="container">
+        <h2 class="section-title cuenta__title" id="cuenta-titulo">La cuenta regresiva ya comenzó.</h2>
+        <p class="cuenta__sub">Viernes 27 de noviembre de 2026 · Horario: 19.30hs · Lugar: Bartolomé Mitre 6370, CABA.</p>
+        <div class="cuenta__grid" id="countdown" aria-live="polite">
+          <div class="bloque"><span class="numero" id="dias">00</span><span class="etiqueta">Días</span></div>
+          <div class="bloque"><span class="numero" id="horas">00</span><span class="etiqueta">Horas</span></div>
+          <div class="bloque"><span class="numero" id="minutos">00</span><span class="etiqueta">Minutos</span></div>
+          <div class="bloque"><span class="numero" id="segundos">00</span><span class="etiqueta">Segundos</span></div>
+        </div>
+        <p class="cuenta__mensaje" id="mensaje"></p>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container">
+        <p class="eyebrow eyebrow--line">Sobre Raíces</p>
+        <h2 class="section-title">Un territorio. Una memoria. Una historia.</h2>
+        <p class="about__text">Identidad que nace del territorio, memoria que se transforma en diseño.</p>
+
+        <div class="cards cards--two">
+          <article class="card">
+            <h3 class="card__title">Concepto</h3>
+            <p class="card__text">Raíces nace de la necesidad de volver la mirada hacia aquello que construye nuestra identidad: unir materia, tierra y oficio textil.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Identidad</h3>
+            <p class="card__text">La colección parte de esa memoria, pero no busca reproducirla. Busca reinterpretarla.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="show" id="desfile">
+      <div class="container">
+        <p class="eyebrow">El desfile</p>
+        <h2 class="section-title section-title--light">Tres hechos del desfile.</h2>
+
+        <div class="cards cards--three">
+          <article class="card">
+            <h3 class="card__title">Propuesta</h3>
+            <p class="card__text">Composición de los alumnos de Diseño de Moda e Indumentaria de Nueva Escuela.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Inspiración</h3>
+            <p class="card__text">Cuatro hilos que tejen el desfile. Desde la memoria hasta la identidad.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Características</h3>
+            <p class="card__text">Materiales tradicionales, colores, estructura y diseño. Herencia textil en un lenguaje actual.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="colecciones" id="colecciones">
+      <div class="container">
+        <p class="eyebrow eyebrow--dark">Colecciones</p>
+        <h2 class="section-title">Los participantes.</h2>
+        <p class="colecciones__intro">Cada propuesta expresa una búsqueda personal a partir de color, artesanía y conceptual.</p>
+
+        <div class="carrusel">
+          <button type="button" class="carrusel__nav carrusel__nav--prev" aria-label="Anterior">‹</button>
+          <div class="pista" tabindex="0" aria-label="Participantes, desplazá para ver más">
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--rojo)" popovertarget="urdimbre" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-01.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--naranja)" popovertarget="taller-indigo" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-02.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--verde)" popovertarget="costa-dorada" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-03.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--azul)" popovertarget="corte-cacao" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-04.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--rojo)" popovertarget="participante-5" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-05.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--naranja)" popovertarget="participante-6" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-06.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--verde)" popovertarget="participante-7" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-07.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--azul)" popovertarget="participante-8" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-08.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--rojo)" popovertarget="participante-9" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-09.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--naranja)" popovertarget="participante-10" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-10.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--verde)" popovertarget="participante-11" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-11.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--azul)" popovertarget="participante-12" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-12.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--rojo)" popovertarget="participante-13" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-13.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--naranja)" popovertarget="participante-14" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-14.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--verde)" popovertarget="participante-15" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-15.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--azul)" popovertarget="participante-16" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-16.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--rojo)" popovertarget="participante-17" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-17.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--naranja)" popovertarget="participante-18" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-18.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--verde)" popovertarget="participante-19" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-19.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+        <article class="tarjeta">
+          <button class="color" style="--c: var(--azul)" popovertarget="participante-20" aria-label="Ampliar foto">
+            <img src="assets/images/participantes/taller-moda-2026-imagen-20.webp" alt="" loading="lazy" onerror="this.remove()">
+          </button>
+        </article>
+
+          </div>
+          <button type="button" class="carrusel__nav carrusel__nav--next" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="evento" id="evento">
+      <div class="container">
+        <p class="eyebrow">Información del evento</p>
+        <h2 class="section-title section-title--light">Fecha, horario y lugar.</h2>
+
+        <div class="info-boxes">
+          <div class="info-box">
+            <span class="box-label">Fecha</span>
+            <span class="box-value">27 de noviembre</span>
+          </div>
+          <div class="info-box">
+            <span class="box-label">Horario</span>
+            <span class="box-value">19.30hs</span>
+          </div>
+          <div class="info-box">
+            <span class="box-label">Lugar</span>
+            <span class="box-value">Bartolomé Mitre 6370, CABA.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ubicacion" id="ubicacion">
+      <div class="container ubicacion__grid">
+        <div>
+          <p class="eyebrow eyebrow--dark">Ubicación</p>
+          <h2 class="section-title">Cómo llegar.</h2>
+          <p class="ubicacion__name">El Obrador | Centro Creativo</p>
+          <p class="ubicacion__dir"><br>Bartolomé Mitre 1670, CABA C1037</p>
+          <a class="btn" href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDM4OTNqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KSuV_6r-y7yVMVR5WvnMR7oF&daddr=C.+Bartolomé+Mitre+1670,+C1037+Cdad.+Autónoma+de+Buenos+Aires" target="_blank" rel="noopener">Ver Ubicación</a>
+        </div>
+        <div class="ubicacion__mapa">
+          <iframe title="Mapa de El Obrador | Centro Creativo, Bartolomé Mitre 1670" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8510632426464!2d-58.392707724619356!3d-34.60792747295251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbfeaaff952b%3A0x5ba47ccf95a7954!2sEl%20Obrador%20%7C%20Centro%20Creativo!5e0!3m2!1ses!2sar!4v1793915188469!5m2!1ses!2sar" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <img class="footer__logo" src="assets/images/logo/logo-blanco.png" alt="Nueva Escuela de Diseño y Comunicación">
+        <nav class="footer__social" aria-label="Redes y sitio de Nueva Escuela">
+          <a href="https://www.instagram.com/nuevaescuela_oficial/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm8 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8a3.2 3.2 0 0 0 3.2-3.2V8A3.2 3.2 0 0 0 16 4.8zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.7a2.1 2.1 0 1 0 2.1 2.1A2.1 2.1 0 0 0 12 9.9zM17.1 6.7a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/nuevaescuela/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.2 8.4V6.9c0-.7.4-1 1.1-1H17V3.2h-2.2C12.1 3.2 11 4.5 11 6.7v1.7H9v2.6h2V21h3.2v-9.7h2.2l.4-2.6h-2.6z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@videosnuevaescuela" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23 12.2s0-3.1-.4-4.5a2.7 2.7 0 0 0-1.9-1.9C19.2 5.4 12 5.4 12 5.4s-7.2 0-8.7.4a2.7 2.7 0 0 0-1.9 1.9C1 9.1 1 12.2 1 12.2s0 3.1.4 4.5a2.7 2.7 0 0 0 1.9 1.9c1.5.4 8.7.4 8.7.4s7.2 0 8.7-.4a2.7 2.7 0 0 0 1.9-1.9c.4-1.4.4-4.5.4-4.5zM9.8 15.5V8.9l6.1 3.3-6.1 3.3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@nuevaescuela_xd" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.41a8.16 8.16 0 0 0 4.77 1.52V7.49a4.85 4.85 0 0 1-1-.8z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/school/nueva-escuela-de-dise%C3%B1o-y-comunicaci%C3%B3n/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4.7 3.2a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM3 9h3.4v12H3zm7 0h3.3v1.6h.05c.46-.87 1.58-1.8 3.25-1.8 3.48 0 4.12 2.29 4.12 5.27V21H17.3v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21H10V9z"/></svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5491155765099" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 3.2A8.7 8.7 0 0 0 4.6 16.3L3.4 20.6l4.4-1.15A8.7 8.7 0 1 0 12.04 3.2zm5.06 12.3c-.21.6-1.23 1.14-1.7 1.16-.44.02-.86.2-2.9-.6-2.44-.96-4-3.46-4.12-3.62-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.05.46-.3.7-.3h.5c.16 0 .38-.06.6.46.21.6.73 2.08.8 2.23.06.15.1.33.02.52-.08.2-.12.32-.24.49-.12.16-.25.37-.36.5-.12.12-.24.25-.1.49.14.24.62 1.02 1.33 1.66.92.82 1.69 1.07 1.93 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.15 1.18z"/></svg>
+          </a>
+          <a class="footer__web" href="https://nuevaescuela.edu.ar/" target="_blank" rel="noopener">Web</a>
+        </nav>
+      </div>
+      <p class="footer__address"><a href="mailto:info@nuevaescuela.net">info@nuevaescuela.net</a></p>
+    </div>
+    <p class="container footer__legal">Nueva Escuela - Todos los Derechos Reservados 2026</p>
+  </footer>
+
+  <div id="urdimbre" class="lightbox" popover style="--c: var(--rojo)">
+    <button class="lb-fondo" popovertarget="urdimbre" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="urdimbre" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-20" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-01.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="taller-indigo" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="taller-indigo" class="lightbox" popover style="--c: var(--naranja)">
+    <button class="lb-fondo" popovertarget="taller-indigo" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="taller-indigo" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="urdimbre" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-02.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="costa-dorada" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="costa-dorada" class="lightbox" popover style="--c: var(--verde)">
+    <button class="lb-fondo" popovertarget="costa-dorada" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="costa-dorada" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="taller-indigo" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-03.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="corte-cacao" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="corte-cacao" class="lightbox" popover style="--c: var(--azul)">
+    <button class="lb-fondo" popovertarget="corte-cacao" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="corte-cacao" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="costa-dorada" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-04.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-5" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-5" class="lightbox" popover style="--c: var(--rojo)">
+    <button class="lb-fondo" popovertarget="participante-5" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-5" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="corte-cacao" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-05.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-6" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-6" class="lightbox" popover style="--c: var(--naranja)">
+    <button class="lb-fondo" popovertarget="participante-6" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-6" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-5" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-06.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-7" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-7" class="lightbox" popover style="--c: var(--verde)">
+    <button class="lb-fondo" popovertarget="participante-7" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-7" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-6" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-07.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-8" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-8" class="lightbox" popover style="--c: var(--azul)">
+    <button class="lb-fondo" popovertarget="participante-8" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-8" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-7" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-08.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-9" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-9" class="lightbox" popover style="--c: var(--rojo)">
+    <button class="lb-fondo" popovertarget="participante-9" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-9" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-8" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-09.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-10" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-10" class="lightbox" popover style="--c: var(--naranja)">
+    <button class="lb-fondo" popovertarget="participante-10" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-10" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-9" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-10.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-11" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-11" class="lightbox" popover style="--c: var(--verde)">
+    <button class="lb-fondo" popovertarget="participante-11" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-11" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-10" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-11.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-12" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-12" class="lightbox" popover style="--c: var(--azul)">
+    <button class="lb-fondo" popovertarget="participante-12" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-12" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-11" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-12.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-13" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-13" class="lightbox" popover style="--c: var(--rojo)">
+    <button class="lb-fondo" popovertarget="participante-13" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-13" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-12" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-13.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-14" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-14" class="lightbox" popover style="--c: var(--naranja)">
+    <button class="lb-fondo" popovertarget="participante-14" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-14" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-13" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-14.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-15" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-15" class="lightbox" popover style="--c: var(--verde)">
+    <button class="lb-fondo" popovertarget="participante-15" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-15" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-14" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-15.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-16" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-16" class="lightbox" popover style="--c: var(--azul)">
+    <button class="lb-fondo" popovertarget="participante-16" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-16" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-15" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-16.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-17" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-17" class="lightbox" popover style="--c: var(--rojo)">
+    <button class="lb-fondo" popovertarget="participante-17" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-17" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-16" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-17.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-18" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-18" class="lightbox" popover style="--c: var(--naranja)">
+    <button class="lb-fondo" popovertarget="participante-18" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-18" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-17" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-18.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-19" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-19" class="lightbox" popover style="--c: var(--verde)">
+    <button class="lb-fondo" popovertarget="participante-19" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-19" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-18" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-19.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="participante-20" aria-label="Siguiente">›</button>
+  </div>
+
+  <div id="participante-20" class="lightbox" popover style="--c: var(--azul)">
+    <button class="lb-fondo" popovertarget="participante-20" popovertargetaction="hide" aria-label="Cerrar" tabindex="-1"></button>
+    <button class="lb-cerrar" popovertarget="participante-20" popovertargetaction="hide" aria-label="Cerrar">×</button>
+    <button class="lb-flecha lb-prev" type="button" popovertarget="participante-19" aria-label="Anterior">‹</button>
+    <figure class="lb-fig">
+      <img src="assets/images/participantes/taller-moda-2026-imagen-20.webp" alt="" onerror="this.remove()">
+    </figure>
+    <button class="lb-flecha lb-next" type="button" popovertarget="urdimbre" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
